@@ -6,7 +6,7 @@ public class LinkedLists<T> {
 
 	// Append data One By One
 	public void append(T data) {
-		Node <T> newNode = new Node(data);
+		Node<T> newNode = new Node(data);
 		if (head == null) {
 			head = newNode;
 			tail = newNode;
@@ -18,7 +18,7 @@ public class LinkedLists<T> {
 
 	// Display all the Node with value
 	public void display() {
-		Node <T> current = head;
+		Node<T> current = head;
 		if (head == null) {
 			System.out.println("List is Empty");
 		}
@@ -26,5 +26,17 @@ public class LinkedLists<T> {
 			System.out.println(current.data + " ");
 			current = current.next;
 		}
+	}
+
+	// Dequeue all the elements
+	public void dequeue() {
+		Node <T> current = head;
+		while (current != head) {
+			if (current == head) {
+				head = head.next;
+				current = head;
+			}
+		}
+
 	}
 }

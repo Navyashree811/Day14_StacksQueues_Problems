@@ -1,5 +1,5 @@
 /*
- * UC 3 : Ability to Create a queue of 56 -> 30 -> 70.
+ * UC 4 : Ability to dequeue from the beginning.
  */
 package com.bridgelabz.stackqueue;
 
@@ -11,6 +11,7 @@ public class LinkedListMain {
 		oparetionQueue.append(70);
 
 		oparetionQueue.display();
+		oparetionQueue.dequeue();
 	}
 
 }
